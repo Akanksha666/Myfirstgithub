@@ -1,0 +1,845 @@
+Last login: Sun Nov  6 19:19:15 on console
+[oh-my-zsh] Insecure completion-dependent directories detected:
+drwxrwxr-x  3 akankshashrivastava  admin   96 Oct 16  2020 /usr/local/share/zsh
+drwxrwxr-x  7 akankshashrivastava  admin  224 Oct  6  2021 /usr/local/share/zsh/site-functions
+
+[oh-my-zsh] For safety, we will not load completions from these directories until
+[oh-my-zsh] you fix their permissions and ownership and restart zsh.
+[oh-my-zsh] See the above list for directories with group or other writability.
+
+[oh-my-zsh] To fix your permissions you can do so by disabling
+[oh-my-zsh] the write permission of "group" and "others" and making sure that the
+[oh-my-zsh] owner of these directories is either root or your current user.
+[oh-my-zsh] The following command may help:
+[oh-my-zsh]     compaudit | xargs chmod g-w,o-w
+
+[oh-my-zsh] If the above didn't help or you want to skip the verification of
+[oh-my-zsh] insecure directories you can set the variable ZSH_DISABLE_COMPFIX to
+[oh-my-zsh] "true" before oh-my-zsh is sourced in your zshrc file.
+
+➜  ~ mvn -version
+zsh: command not found: mvn
+➜  ~ cd git
+cd: no such file or directory: git
+➜  ~ cd Downloads/Git
+➜  Git ls
+➜  Git git clone https://github.com/Akanksha666/Myfirstgithub.git
+Cloning into 'Myfirstgithub'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), 12.42 KiB | 1.55 MiB/s, done.
+➜  Git ls 
+Myfirstgithub
+➜  Git cd Myfirstgithub 
+➜  Myfirstgithub git:(main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+➜  Myfirstgithub git:(main) git checkout -b "git-branch1s"
+Switched to a new branch 'git-branch1s'
+➜  Myfirstgithub git:(git-branch1s) git status
+On branch git-branch1s
+nothing to commit, working tree clean
+➜  Myfirstgithub git:(git-branch1s) git status
+On branch git-branch1s
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	dummy/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Myfirstgithub git:(git-branch1s) ✗ git commit -a -m "Added new folder"
+On branch git-branch1s
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	dummy/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Myfirstgithub git:(git-branch1s) ✗ git add .
+➜  Myfirstgithub git:(git-branch1s) ✗ git status
+On branch git-branch1s
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   dummy/Payslip India Sept_2020.pdf
+
+➜  Myfirstgithub git:(git-branch1s) ✗ git commit -a -m "Added new folder"
+[git-branch1s 39f102c] Added new folder
+ Committer: Akanksha Shrivastava <akankshashrivastava@Akankshas-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 dummy/Payslip India Sept_2020.pdf
+➜  Myfirstgithub git:(git-branch1s) git status
+On branch git-branch1s
+nothing to commit, working tree clean
+➜  Myfirstgithub git:(git-branch1s) git push origin git-branch1s
+Username for 'https://github.com': Akanksha666
+Password for 'https://Akanksha666@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Akanksha666/Myfirstgithub.git/'
+➜  Myfirstgithub git:(git-branch1s) git push origin git-branch1s
+Username for 'https://github.com': Akanksha666
+Password for 'https://Akanksha666@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Akanksha666/Myfirstgithub.git/'
+➜  Myfirstgithub git:(git-branch1s) git push origin git-branch1s
+Username for 'https://github.com': Akanksha666
+Password for 'https://Akanksha666@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Akanksha666/Myfirstgithub.git/'
+➜  Myfirstgithub git:(git-branch1s) git config --global --edit
+➜  Myfirstgithub git:(git-branch1s) git config --global --edit  
+➜  Myfirstgithub git:(git-branch1s) git push origin git-branch1s
+Username for 'https://github.com': Akanksha666
+Password for 'https://Akanksha666@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Akanksha666/Myfirstgithub.git/'
+➜  Myfirstgithub git:(git-branch1s) git push origin -u git-branch1s
+Username for 'https://github.com': Akanksha666
+Password for 'https://Akanksha666@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Akanksha666/Myfirstgithub.git/'
+➜  Myfirstgithub git:(git-branch1s) git config user.name "Akanksha666"
+➜  Myfirstgithub git:(git-branch1s) brew install gh
+Running `brew update --preinstall`...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:1f50bf80583bd436c9542d4fa5ad47df0ef0f0bea22ae710c4f04c42d7560bca
+######################################################################### 100.0%
+==> Pouring portable-ruby-2.6.8_1.el_capitan.bottle.tar.gz
+==> Auto-updated Homebrew!
+Updated 4 taps (homebrew/cask-versions, homebrew/core, homebrew/cask and homebrew/services).
+==> New Formulae
+aarch64-elf-binutils                     litani
+aarch64-elf-gcc                          livekit
+abi-compliance-checker                   livekit-cli
+abi-dumper                               llvm@13
+acl                                      llvm@14
+adamstark-audiofile                      lmfit
+age-plugin-yubikey                       lndir
+agg                                      localtunnel
+alpscore                                 ltex-ls
+ansible-language-server                  lucky-commit
+antidote                                 lunar-date
+apophenia                                mabel
+arkade                                   maclaunch
+arxiv_latex_cleaner                      mailsy
+ascii2binary                             manifest-tool
+astro                                    mapproxy
+asyncapi                                 mariadb@10.6
+atlas                                    mariadb@10.7
+autocannon                               mariadb@10.8
+autocorrect                              markdown-toc
+aws-auth                                 markdownlint-cli2
+aws-nuke                                 mbt
+aws2-wrap                                mbw
+aztfy                                    mcap
+bartib                                   mcfly
+bash-language-server                     meek
+bazarr                                   melody
+bdftopcf                                 mesheryctl
+berkeley-db@5                            metalang99
+bfgminer                                 metview
+biber                                    micro_inetd
+bk                                       minimap2
+bkt                                      mist
+boost@1.76                               mkfontscale
+bore-cli                                 mkp224o
+brev                                     mle
+brigade-cli                              mold
+btrfs-progs                              mongodb-atlas-cli
+burst                                    monika
+bvm                                      mprocs
+c                                        mqttui
+c2rust                                   mu-repo
+camlp-streams                            muon
+canfigger                                mxnet
+cargo-bundle                             mycorrhiza
+cargo-crev                               mypaint-brushes
+cargo-depgraph                           nali
+cargo-nextest                            naml
+cargo-udeps                              nb
+cargo-zigbuild                           neovide
+cbindgen                                 nerdctl
+censys                                   netcdf-cxx
+cfonts                                   netcdf-fortran
+chain-bench                              netmask
+checkmake                                nftables
+chroma                                   nickel
+circumflex                               nmrpflash
+cloudflare-quiche                        node@18
+cloudflared                              numdiff
+cloudprober                              nuraft
+cmctl                                    nvchecker
+commitlint                               oak
+compiledb                                objconv
+coursier                                 observerward
+cpi                                      ocl-icd
+cpp-httplib                              octosql
+cpptoml                                  odo-dev
+cql-proxy                                oh-my-posh
+create-api                               ohdear-cli
+criterion                                onlykey-agent
+crytic-compile                           open62541
+csview                                   opencl-headers
+ctlptl                                   opencl-icd-loader
+curlcpp                                  opendht
+cwb3                                     openjdk@17
+cxgo                                     openliberty-jakartaee9
+czg                                      openliberty-webprofile9
+dagger                                   opentelemetry-cpp
+dart-sdk                                 openvi
+datatype99                               ouch
+dbml-cli                                 pacmc
+ddcutil                                  page
+ddh                                      pam-reattach
+difftastic                               pax
+distrobox                                payload-dumper-go
+djhtml                                   pferd
+docker-buildx                            pg_cron
+doggo                                    pg_partman
+dooit                                    pget
+dotdrop                                  pgsync
+dpp                                      phrase-cli
+dronedb                                  pinocchio
+dsda-doom                                pinot
+dsq                                      pint
+dtm                                      pipe-rename
+dtrx                                     pixie
+dump1090-mutability                      pixiewps
+dumpling                                 pkcs11-tools
+dunamai                                  pluto
+dura                                     poac
+dynaconf                                 pocl
+dynein                                   podman-compose
+dynomite                                 pomsky
+easeprobe                                popeye
+ecflow-ui                                postgraphile
+echidna                                  postgresql@15
+edencommon                               powerman-dockerize
+editorconfig-checker                     primecount
+eget                                     procyon-decompiler
+elixir-ls                                protobuf@3
+elvis                                    proxsuite
+enex2notion                              prql-compiler
+epinio                                   prr
+erlang@24                                purescript-language-server
+erofs-utils                              pymol
+esphome                                  pymupdf
+etcd-cpp-apiv3                           python-build
+evernote-backup                          python-gdbm@3.11
+fastfetch                                python-tk@3.11
+fastnetmon                               python-typing-extensions
+fastp                                    python@3.11
+fb303                                    pyyaml
+fbthrift                                 qbe
+fclones                                  qsv
+fdroidcl                                 quick-lint-js
+felinks                                  quilt-installer
+fend                                     quran
+ferium                                   railway
+ffmpeg@4                                 rdb
+flix                                     redis@6.2
+flock                                    release-it
+flyctl                                   req
+fnt                                      reshape
+fonts-encodings                          ripsecrets
+fortls                                   roapi
+fortran-language-server                  rome
+fourmolu                                 rospo
+fprettify                                rpki-client
+fred                                     rslint
+freebayes                                ruby@3.0
+fuego-firestore                          rune
+fypp                                     rure
+gator                                    rush-parallel
+gaze                                     salt-lint
+gcc@11                                   sambamba
+gcem                                     scala@2.13
+gdrive-downloader                        scalingo
+gebug                                    schemathesis
+gemgen                                   sdl2_sound
+ghc@8.10                                 seaweedfs
+ghcup                                    sftpgo
+ghorg                                    sgn
+gi-docgen                                sgr
+git-codereview                           shaderc
+git-delete-merged-branches               shadowsocks-rust
+git-machete                              slither-analyzer
+git-sync                                 smap
+git-workspace                            snapcast
+glibc@2.13                               sniffer
+glider                                   snowball
+gnustep-base                             snowflake
+go-camo                                  solargraph
+go@1.17                                  solc-select
+go@1.18                                  sophus
+goawk                                    spago
+goctl                                    spidermonkey@78
+gokart                                   spirv-headers
+gops                                     spr
+got                                      sqlcmd
+gotify                                   sqlfluff
+grafana-agent                            sqls
+groestlcoin                              sse2neon
+gst-plugins-rs                           sshs
+gum                                      stanc3
+has                                      statix
+hatch                                    stencil
+helix                                    stylish-haskell
+helmify                                  svt-av1
+highs                                    swiftdraw
+highway                                  swtpm
+hof                                      synergy-core
+hotbuild                                 tagref
+hpp-fcl                                  taplo
+http-prompt                              tarlz
+httpyac                                  tbls
+huggingface-cli                          tea
+hurl                                     teku
+hut                                      teller
+hwatch                                   tere
+hysteria                                 terminalimageviewer
+hyx                                      terraform-lsp
+ifacemaker                               terramate
+iir1                                     testkube
+ijq                                      textidote
+imap-backup                              textract
+imposm3                                  tfel
+inih                                     tfschema
+inotify-tools                            tidy-viewer
+install-peerdeps                         tinysearch
+interface99                              tlsx
+iodine                                   toml-test
+iptables                                 toxcore
+isa-l                                    tradcpp
+ivtools                                  treefmt
+jackett                                  tremor-runtime
+jaq                                      trezor-bridge
+jdtls                                    trivy
+jj                                       trzsz
+jless                                    trzsz-go
+json2tsv                                 ttdl
+jsonschema                               ttmath
+juliaup                                  tuc
+jupp                                     tuntox
+kalign                                   tygo
+kdoctor                                  typewritten
+kics                                     typos-cli
+kmod                                     ugit
+koka                                     unisonlang
+kopia                                    usbutils
+kt-connect                               uthash
+kubekey                                  uutils-findutils
+kubernetes-cli@1.22                      valijson
+kubescape                                vcluster
+kubesess                                 vectorscan
+kyverno                                  verapdf
+leapp-cli                                vermin
+levant                                   verovio
+lexicon                                  vile
+lgeneral                                 vineyard
+libabw                                   virt-manager
+libadwaita                               vkectl
+libapplewm                               vsce
+libbpf                                   vtable-dumper
+libcython                                vulkan-loader
+libdivide                                wasm-micro-runtime
+libeatmydata                             wasm-tools
+libff                                    wb32-dfu-updater_cli
+libgrape-lite                            weasyprint
+libgrapheme                              webkitgtk
+liblbfgs                                 webp-pixbuf-loader
+libmarpa                                 websocketpp
+libnetfilter_conntrack                   weggli
+libnftnl                                 werf
+libnl                                    wordle
+libobjc2                                 x86_64-linux-gnu-binutils
+libplacebo                               xcode-kotlin
+libpython-tabulate                       xctesthtmlreport
+librasterlite2                           xdg-ninja
+libretls                                 xkbcomp
+libtpms                                  xkcd
+liburing                                 xpipe
+libvatek                                 xq
+libxcrypt                                xwin
+libxcvt                                  yamale
+libxfont2                                yaml-language-server
+licenseplist                             yorkie
+licensor                                 zbctl
+lighthouse                               zk
+linode-cli                               zsh-fast-syntax-highlighting
+linux-headers@5.15                       zx
+linux-headers@5.16
+==> New Casks
+1password-cli-beta
+1password-cli1
+1password7
+86box
+abbyy-finereader-pdf
+accord
+adguard-vpn-nightly
+adze
+aerial-beta
+aethersx2
+akiflow
+alfred4
+aliwangwang
+alpha
+amazon-luna
+anki-beta
+anypointstudio
+anytype
+apifox
+apipost
+app-fair
+appium-inspector
+aptakube
+arc
+archy
+arctype
+arduino-ide
+ares
+astrofox
+athens
+audiorelay
+avifquicklook
+banana-cake-pop
+battery
+beast2
+betterandbetter
+betterdisplay
+bettermouse
+bike
+bili-downloader
+bing-wallpaper
+binocs
+black-light
+black-light-pro
+bluebubbles
+bookwright
+bridge
+cardinal
+cardpresso
+centered
+chipmunk
+chromium-gost
+cider
+cisdem-duplicate-finder
+citrix-workspace
+cleaneronepro
+cleanmymac-zh
+clickshare
+cloud189
+clover
+cnkiexpress
+color-studio
+confluent-cli
+contour
+corretto17
+creality-slicer
+cro-mag-rally
+dataspell
+dbeaverlite
+dbeaverultimate
+dbgate
+dcp-o-matic-combiner
+dcp-o-matic-disk-writer
+dcp-o-matic-editor
+dcp-o-matic-playlist-editor
+decentr
+descript
+detail
+devcleaner
+devtoys
+diffusionbee
+direqual
+dixa
+dmg-canvas
+doll
+doughnut
+douyin
+drawpile
+duckduckgo
+ecamm-live
+electrum-grs
+elephicon
+eliot
+eloquent
+emmetapp
+equinox
+espanso
+fastmarks
+ferdium
+fertigt-slate
+filen
+finalshell
+fishing-funds
+fleet
+fly-key
+flycast
+fmail2
+folder-colorizer
+foxit-pdf-editor
+free-gpgmail
+fresh
+gama
+gama-jdk
+gamemaker
+gamma-control
+gaphor
+gcc-aarch64-embedded
+gdevelop
+genesis-plus
+gittyup
+glance-chamburr
+go-shiori
+goxel
+gridtracker
+groestlcoin-core
+gyroflow
+hackolade
+hancom-word-2014
+hdfview
+headlamp
+hepta
+heroic
+hookmark
+hostsx
+httpie
+imagex
+imhex
+inkstitch
+input-source-pro
+iptvnator
+iqmol
+irpf2022
+jetbrains-gateway
+jpc-qlcolorcode
+jquake
+jt-bridge
+juice
+jump-desktop-connect
+kdenlive
+kdrive
+keet
+keysafe
+kigb
+kindavim
+kitty-nightly
+kmeet
+ksdiff2
+laconvolver
+languagetool
+lapce
+lectrote
+lemonlime
+libcblite
+libcblite-community
+linearmouse
+livebook
+localxpose
+lookingglassbridge
+lookingglassstudio
+lunacy
+lunasea
+macast
+macforge
+macloggerdx
+macloggerdx-beta
+macrorecorder
+mailmate-beta
+manila
+manymc
+manyverse
+mbcord
+medis
+mega
+mellel
+metadatics
+miaoyan
+micromamba
+mighty-mike
+miln-movie-splitter
+miniwol
+mints
+mixed-in-key-live
+mixin
+moderndeck
+moradownloader
+mp3tag
+music-bar
+mx-power-gadget
+mysteriumvpn
+nanoem
+navicat-premium15
+neovide
+nitro-pdf-pro
+nordlayer
+northern-softworks-cache-cleaner
+notesnook
+notion-enhanced
+nym-wallet
+obs-beta
+omegat-latest
+onekey
+only-switch
+openbci
+opencore-patcher
+openin
+openlens
+openshift-client
+openshot-video-editor-daily
+opera-crypto-developer
+orangedrangon-android-messages
+orion
+orka-vm-tools
+oso-cloud
+osp-tracker
+osu
+oxwu
+paddle-easydl
+panwriter
+paperpile
+paragon-camptune
+parallels16
+parallels17
+phpwebstudy
+picfindr
+pictureview
+pieces-cli
+pingnoo
+planet
+playcover-community
+playdate-simulator
+plex-htpc
+plugdata
+pluginval
+plus42-binary
+plus42-decimal
+podman-desktop
+poker-copilot
+polypad
+polypane
+postman-agent
+postman-cli
+prismlauncher
+processing3
+projector
+protokol
+prowlarr
+psst
+qspace-pro
+qth
+quarto
+quit-all
+qwerty-fr
+rambox-ce
+random-mouse-clicker
+readdle-spark
+readmoreading
+readyapi
+rectangle-pro
+reflect
+reflex
+remotehamradio
+restream-chat
+reverso
+rnnoise
+roam-research
+rockboxutility
+roonbridge
+rstudio-preview-electron
+rustdesk
+rwts-pdfwriter
+sanesidebuttons
+schildichat
+scroll
+semeru-jdk17-open
+shapr3d
+shop-different
+simplemind
+sioyek
+sitala
+slack-cli
+smartreporter-free
+sms-plus
+snapmaker-luban
+sol
+sonic-lineup
+sonixd
+spline
+squash
+ssdreporter-free
+steam-plus-plus
+supermjograph
+supernotes
+surge-xt
+swiftcord
+tablecruncher
+tailscale
+tdr-kotelnikov
+tdr-nova
+tdr-vos-slickeq
+tempbox
+temurin17
+temurin18
+texifier
+the-watcher
+thinlinc-client
+threema-work
+ti-smartview-ce-for-the-ti-84-plus-family
+tidgi
+tl-legacy
+tmpdisk
+todesk
+tomatobar
+topaz-denoise-ai
+topaz-gigapixel-ai
+topaz-sharpen-ai
+topaz-video-ai
+tqsl
+trex
+trivial
+trunk-io
+twitch-studio
+typcn-bilibili
+ui
+ujam
+ukrainian-typographic-keyboard
+unicopedia-plus
+universal-android-debloater
+utm-beta
+v2ray-unofficial
+ved
+vertcoin-core
+vieb
+virtualbox6
+virtualbuddy
+vivid
+vlc-setup
+volley
+vpn-tracker-365
+vscodium-insiders
+waltr-heic-converter
+warp
+weektodo
+whist-browser
+windterm
+wirecast
+wolai
+workman
+workspace-one-intelligent-hub
+wow
+wpsoffice-cn
+write
+wsjtx
+xemu
+xiv-on-mac
+xmind8
+xprocheck
+xstation5
+yandex-music-unofficial
+yattee
+yousician
+yubico-authenticator-beta
+yubihsm2-sdk
+zulu17
+
+You have 17 outdated formulae and 1 outdated cask installed.
+You can upgrade them with brew upgrade
+or list them with brew outdated.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/manifests/2.19.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/blobs/sha256:e9f63325dbbfc3b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Pouring gh--2.19.0.monterey.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/gh/2.19.0: 145 files, 38.7MB
+==> Running `brew cleanup gh`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+➜  Myfirstgithub git:(git-branch1s) gh auth login                     
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 6E05-26C0
+Press Enter to open github.com in your browser... 
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as Akanksha666
+➜  Myfirstgithub git:(git-branch1s) git push origin git-branch1s   
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 261.64 KiB | 12.46 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'git-branch1s' on GitHub by visiting:
+remote:      https://github.com/Akanksha666/Myfirstgithub/pull/new/git-branch1s
+remote: 
+To https://github.com/Akanksha666/Myfirstgithub.git
+ * [new branch]      git-branch1s -> git-branch1s
+➜  Myfirstgithub git:(git-branch1s) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  Myfirstgithub git:(main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+➜  Myfirstgithub git:(main) git merge git-branch1s
+Updating 2da7d6d..39f102c
+Fast-forward
+ .DS_Store                         | Bin 0 -> 6148 bytes
+ dummy/Payslip India Sept_2020.pdf | Bin 0 -> 358446 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 dummy/Payslip India Sept_2020.pdf
+➜  Myfirstgithub git:(main) git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Akanksha666/Myfirstgithub.git
+   2da7d6d..39f102c  main -> main
+➜  Myfirstgithub git:(main) git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 647 bytes | 161.00 KiB/s, done.
+From https://github.com/Akanksha666/Myfirstgithub
+ * branch            main       -> FETCH_HEAD
+   39f102c..7663afb  main       -> origin/main
+Updating 39f102c..7663afb
+Fast-forward
+ test.py | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.py
+➜  Myfirstgithub git:(main) 
